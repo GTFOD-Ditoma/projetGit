@@ -1,3 +1,46 @@
 h1{
     color: red;
 }
+.container{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    background: darkblue;
+    margin: auto;
+    border-top-left-radius: 100px;
+   transform: rotate(45deg);
+    /*box-shadow: 8px 6px 18px black;*/
+}
+.container p{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    padding-top: 85px;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.container small{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    padding-left: 4.5rem;
+    padding-top: 9rem;
+    transform: rotateZ(-90deg);
+}
+.online{
+    position: relative;
+}
+.online::before{
+    content: "";
+    background: yellow;
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transform: rotate(90deg);
+    padding-top: -.2rem;
+
+}
